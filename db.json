@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "receitas": [
+    {
+      "di": 1,
+      "image":"https://amopaocaseiro.com.br/wp-content/uploads/2020/01/pao-caseiro-para-iniciantes_02-840x560.jpg",
+      "nome": "Pão caseiro",
+      "valor": "10,00"
+    },
+    {
+      "id": 2,
+      "image": "https://content.paodeacucar.com/wp-content/uploads/2019/03/p%C3%A3o-caseiro-levain-pronto.jpg",
+      "nome": "Pão bolo",
+      "valor": "15,00"
+    },
+    {
+      "id": 3,
+      "image": "https://storage.googleapis.com/imagens_videos_gou_cooking_prod/production/mesas/2021/05/d8ee592c-pao-de-forma-arco-iris-_-tm-paes-coloridos-_-ana-federici-_-alta-8.jpg",
+      "nome": "Bolo colorido",
+      "valor": "27,50"
+    },
+    {
+      "id": 4,
+      "image": "https://cdnm.westwing.com.br/glossary/uploads/br/2015/12/15162850/mesa-com-saleiro-pimenteiro-e-porta-p%C3%A3o-em-metal-cromado-unsplash-c-a2840-.jpg",
+      "nome": "Pão integral",
+      "valor": "07,90"
+    },
+    {
+      "id": 5,
+      "image": "https://blogequilibrese.files.wordpress.com/2018/02/pao-de-queijo-fit.jpg?crop",
+      "nome": "Pão de queijo",
+      "valor": "4,90"
+    },
+    {
+      "id": 6,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzdz1p0rqN8HX7EqFrK6BsIMFIbvfqys-ocQ&usqp=CAU",
+      "nome": "Pão sovado",
+      "valor": "13,90"
+    }
+  ]
+}

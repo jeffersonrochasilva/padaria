@@ -1,18 +1,34 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Presentation />
+    <Recommentation />
+    <BestSellers />
+    <SectionCard />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Header from "@/components/Header";
+import Presentation from "@/components/Presentation";
+import Recommentation from "@/components/Recommentation";
+import BestSellers from "@/components/BestSellers";
+import SectionCard from "@/components/SectionCard";
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    Presentation,
+    Recommentation,
+    BestSellers,
+    SectionCard,
+  },
+};
 </script>
+
+<style lang="scss" scoped>
+.home {
+  background-image: url(https://www.papeiseparede.com.br/2010-category_default/papel-de-parede-hora-do-cafe.jpg);
+  background-attachment: fixed;
+  width: 100%;
+}
+</style>
