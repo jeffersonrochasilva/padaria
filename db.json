@@ -53,5 +53,25 @@
       "nome": "Pão sovado",
       "valor": "13,90"
     }
+  ],
+  "kits": [
+    {
+      "id": 1,
+      "image":"https://www.interflores.com.br/lojas/00008104/prod/cesta_cafe_manha_13.PNG",
+      "componentes": "Pão integral, frutas, Iogurte",
+      "valor": "55,90"
+    },
+    {
+      "id": 2,
+      "image": "https://marcosgourmet.com.br/wp-content/uploads/2019/06/Marcos_Cesta2-1.jpg",
+      "componentes": "Pão bolinha, peito de peru, salgado açado",
+      "valor": "80,60"
+    },
+    {
+      "id": 3,
+      "image": "https://www.thebakers.com.br/wp-content/uploads/2020/01/Cesta-Cafe%CC%81-da-Manha%CC%83-Buenos-Dias-The-Bakers.png",
+      "componentes": "Frutas, queijo branco, salada de pão branco com pimenta",
+      "valor": "65,40"
+    }
   ]
 }

@@ -1,8 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+
 import Home from "../pages/Home.vue";
 import About from "../pages/About";
 import Product from "../pages/Product";
+import Contact from "../pages/Contact";
+import Clients from "../pages/Clients";
+import Kits from "../pages/Kits";
+import ClienteAria from "../pages/ClienteAria";
 
 Vue.use(VueRouter);
 
@@ -21,6 +26,26 @@ const routes = [
     path: "/product",
     name: "Product",
     component: Product,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
+  },
+  {
+    path: "/clients",
+    name: "Clients",
+    component: Clients,
+  },
+  {
+    path: "/Kits",
+    name: "Kits",
+    component: Kits,
+  },
+  {
+    path: "/clienteAria",
+    name: "ClienteAria",
+    component: ClienteAria,
   },
 ];
 

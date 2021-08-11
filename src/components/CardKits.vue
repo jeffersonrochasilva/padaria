@@ -1,11 +1,13 @@
 <template>
   <div class="card">
-    <div v-for="item in receita" :key="item.id" class="card__container">
+    <div v-for="item in dadoskits" :key="item.id" class="card__container">
       <div class="card__container__image">
         <img :src="item.image" alt="" />
       </div>
       <div class="card__container__description">
-        <span>{{ item.nome }}</span>
+        <div class="card__container__description__text">
+          <span>{{ item.componentes }}</span>
+        </div>
         <strong>R${{ item.valor }} Kg</strong>
         <button>PEDIR</button>
       </div>
@@ -16,33 +18,32 @@
 <script>
 import axios from "axios";
 export default {
+  data() {
+    return {
+      dadoskits: [],
+    };
+  },
   methods: {
-    async buscardados() {
-      const response = await axios.get("http://localhost:3000/receitas");
-      this.receita = response.data;
-      console.log(this.receita);
+    async kits() {
+      const response = await axios.get("http://localhost:3000/kits");
+      this.dadoskits = response.data;
     },
   },
   mounted() {
-    this.buscardados();
-  },
-  data() {
-    return {
-      receita: [],
-    };
+    this.kits();
   },
 };
 </script>
+
 <style lang="scss" coped>
 .card {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   &__container {
-    width: 430px;
-    height: 660px;
+    width: 330px;
+    height: 560px;
     box-shadow: 3px 3px 10px 2px #000;
-    margin: 30px;
+    margin: 20px;
     // border: 1px solid red;
     background: rgba(253, 253, 253, 0.5);
 
@@ -61,6 +62,11 @@ export default {
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
+      &__text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
       span {
         font-weight: bold;
         font-size: 32px;

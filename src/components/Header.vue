@@ -10,12 +10,18 @@
       <div class="header__container__produto">
         <p @click="viajarproduct">Produtos</p>
       </div>
-      <div class="header__container__produto"><p>Kits</p></div>
+      <div class="header__container__produto">
+        <p @click="viajarkits">Kits</p>
+      </div>
       <div class="header__container__produto">
         <p @click="viajar">Sobre a Padaria</p>
       </div>
-      <div class="header__container__produto"><p>Junino</p></div>
-      <div class="header__container__produto"><p>Contato</p></div>
+      <div class="header__container__produto">
+        <p @click="viajarclients">Clientes</p>
+      </div>
+      <div class="header__container__produto">
+        <p @click="viajarcontact">Contato</p>
+      </div>
       <div class="header__container__produto">
         <div class="header__container__produto__valor">
           <strong>R$0,00</strong>
@@ -38,6 +44,15 @@ export default {
     viajarproduct() {
       this.$router.push("/product");
     },
+    viajarcontact() {
+      this.$router.push("/contact");
+    },
+    viajarclients() {
+      this.$router.push("/clients");
+    },
+    viajarkits() {
+      this.$router.push("/kits");
+    },
   },
 };
 </script>
@@ -59,15 +74,24 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // &__sobre {
-    //   // border: 1px solid red;
-    //   // padding: 10px;
-    //   // position: absolute;
-    // }
+    &__sobre {
+      p {
+        cursor: pointer;
+        &:hover {
+          color: green;
+        }
+      }
+    }
     &__produto {
       height: 100%;
       display: flex;
       align-items: center;
+      p {
+        cursor: pointer;
+        &:hover {
+          color: green;
+        }
+      }
       &__valor {
         width: 110px;
         height: 40px;

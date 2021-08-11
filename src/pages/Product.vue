@@ -25,9 +25,8 @@ export default {
   &__container {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     &__card {
-      max-width: 1500px;
+      max-width: 1170px;
     }
   }
 }
