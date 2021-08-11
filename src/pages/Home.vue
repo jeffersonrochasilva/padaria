@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Header />
+
     <Presentation />
     <Recommentation />
     <BestSellers />
@@ -30,5 +31,9 @@ export default {
   background-image: url(https://www.papeiseparede.com.br/2010-category_default/papel-de-parede-hora-do-cafe.jpg);
   background-attachment: fixed;
   width: 100%;
+}
+.topo {
+  position: relative;
+  bottom: -150;
 }
 </style>
