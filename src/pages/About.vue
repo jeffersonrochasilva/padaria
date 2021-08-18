@@ -62,6 +62,8 @@ export default {
 .about {
   width: 100%;
   height: 100%;
+  background-image: url(https://cdn.awsli.com.br/800x800/1156/1156203/produto/61014820/4dea0beb53.jpg);
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -21,6 +21,9 @@ export default {
 <style lang="scss" scoped>
 .kits {
   width: 100%;
+  // background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuYSShfuYVEnkJqdgkmopVdyMsMqeXi-ClUQ&usqp=CAU);
+  // background-attachment: fixed;
+  // background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,11 +3,11 @@
     <Header />
     <div class="clients__container">
       <div class="clients__container__login">
-        <input type="text" placeholder="Digite seu e-mail" />
-        <input type="password" placeholder="Digite sua senha" />
+        <input v-model="email" type="text" placeholder="Digite seu e-mail" />
+        <input v-model="senha" type="password" placeholder="Digite sua senha" />
         <div class="clients__container__login__button">
-          <button>ENTRAR</button>
-          <button>SER CLIENTE</button>
+          <button @click="submit">ENTRAR</button>
+          <button @click="irpara">SER CLIENTE</button>
         </div>
       </div>
     </div>
@@ -15,10 +15,36 @@
 </template>
 <script>
 import Header from "@/components/Header";
-
+import axios from "axios";
 export default {
+  data() {
+    return {
+      email: "",
+      senha: "",
+    };
+  },
   components: {
     Header,
+  },
+
+  methods: {
+    irpara() {
+      this.$router.push("/contact");
+    },
+    async submit(e) {
+      e.preventDefault();
+      const { data } = await axios.get("  http://localhost:3000/clientes", {
+        params: {
+          email: this.email,
+          senha: this.senha,
+        },
+      });
+      if (data.length > 0) {
+        this.$router.push("/clientearia");
+      } else {
+        alert("usuario ou senhas incorretas");
+      }
+    },
   },
 };
 </script>
@@ -27,12 +53,17 @@ export default {
 .clients {
   width: 100%;
   height: 100%;
+  background-image: url(https://img.elo7.com.br/product/600x380/224DD3C/papel-de-parede-food-name-clean-3m-papel-decorativo.jpg);
+  background-attachment: fixed;
+
   &__container {
     width: 100%;
-    height: 80%;
+    height: 87%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(253, 253, 253, 0.5);
+
     &__login {
       width: 40%;
       height: 35%;

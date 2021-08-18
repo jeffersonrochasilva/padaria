@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 export default {
   methods: {
     viajar() {
@@ -77,6 +77,8 @@ export default {
     &__sobre {
       p {
         cursor: pointer;
+        font-family: "Kaushan Script", cursive;
+
         &:hover {
           color: green;
         }
@@ -88,6 +90,8 @@ export default {
       align-items: center;
       p {
         cursor: pointer;
+        font-family: "Kaushan Script", cursive;
+
         &:hover {
           color: green;
         }

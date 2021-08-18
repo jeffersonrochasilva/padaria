@@ -22,11 +22,17 @@ export default {
 <style lang="scss" scoped>
 .product {
   width: 100%;
+  background-image: url(https://cdn.awsli.com.br/800x800/1156/1156203/produto/61014820/4dea0beb53.jpg);
+  background-attachment: fixed;
+  // background-repeat: no-repeat;
   &__container {
+    width: 100%;
+    height: 87%;
+    background: rgba(253, 253, 253, 0.5);
     display: flex;
     justify-content: center;
     &__card {
-      max-width: 1170px;
+      width: 1170px;
     }
   }
 }
