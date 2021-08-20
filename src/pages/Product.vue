@@ -32,6 +32,8 @@ export default {
     display: flex;
     justify-content: center;
     &__card {
+      margin-top: 150px;
+
       width: 1170px;
     }
   }

@@ -67,6 +67,7 @@ export default {
     &__login {
       width: 40%;
       height: 35%;
+      margin-top: 170px;
       border-radius: 5px;
       background: #8b4c39;
       display: flex;

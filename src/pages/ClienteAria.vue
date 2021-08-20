@@ -1,19 +1,36 @@
 <template>
   <div class="client">
     <Header />
-    <div class="client__container">
-      <CardClient />
+    <div v-for="(dado, index) in dados" :key="index" class="client__container">
+      <!-- <CardClient /> -->
+      <p>{{ dado.nome }}</p>
+      <p>{{ dado.email }}</p>
+      <p>{{ dado.id }}</p>
     </div>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header";
-import CardClient from "@/components/CardClient";
+import axios from "axios";
 export default {
+  data() {
+    return {
+      dados: [],
+    };
+  },
   components: {
     Header,
-    CardClient,
+    // CardClient,
+  },
+  mounted() {
+    this.getdados();
+  },
+  methods: {
+    async getdados() {
+      const { data } = await axios.get(" http://localhost:3000/clientes");
+      this.dados = data;
+    },
   },
 };
 </script>
@@ -23,10 +40,11 @@ export default {
   height: 100%;
   &__container {
     width: 100%;
-    height: 87.7%;
+    height: 30px;
     background: pink;
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
   }
 }

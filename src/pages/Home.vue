@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <Header />
-
+    <div class="top">
+      <Header />
+    </div>
     <Presentation />
     <Recommentation />
     <BestSellers />
@@ -32,8 +33,8 @@ export default {
   background-attachment: fixed;
   width: 100%;
 }
-.topo {
-  position: relative;
-  bottom: -150;
-}
+// .topo {
+//   position: absolute;
+//   bottom: -150;
+// }
 </style>

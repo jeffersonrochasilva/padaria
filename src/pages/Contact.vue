@@ -110,7 +110,8 @@ export default {
 
     &__center {
       width: 1170px;
-      // height: 100%;
+      margin-top: 190px;
+
       display: flex;
       justify-content: space-around;
       align-items: center;

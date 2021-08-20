@@ -64,6 +64,7 @@ export default {
   padding: 10px 0 10px 0;
   background: #fff;
   box-shadow: 6px 6px 10px #000;
+  // position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;

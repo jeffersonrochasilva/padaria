@@ -71,7 +71,7 @@ export default {
     max-width: 1170px;
     background: #cd9b1d;
     border-right: 4px solid green;
-    margin-top: 7%;
+    margin-top: 10%;
     padding: 40px;
     display: flex;
     align-items: center;

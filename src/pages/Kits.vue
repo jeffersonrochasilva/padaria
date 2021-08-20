@@ -28,7 +28,7 @@ export default {
   flex-direction: column;
   align-items: center;
   &__container {
-    margin-top: 7%;
+    margin-top: 10%;
     max-width: 1170px;
     // border: 1px solid red;
   }

@@ -43,7 +43,7 @@ const routes = [
     component: Kits,
   },
   {
-    path: "/clienteAria",
+    path: "/clientearia",
     name: "ClienteAria",
     component: ClienteAria,
   },
